@@ -1,0 +1,21 @@
+body{
+  margin: 0px;
+}
+
+.contact-hours-wrapper{
+  color: royalblue;
+}
+
+#address-wrapper{
+  color: red;
+}
+
+.navigation-wrapper{
+  height: 190px;
+  background-color: #11122b;
+  color: #cbcbcb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 100px;
+}
