@@ -2,7 +2,7 @@
 .hero-section{
   background-image: url(../backgrounds/fries-hero-bg.jpg);
   padding: 100px;
-  height: 300px;
+  height: 200px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 /* Features Section Styles */
 .features-section{
   height: 400px;
-  background-image: url();
+  background-image: url("https://raw.githubusercontent.com/jordanhudgens/digital-literacy-html-css/master/images/backgrounds/fries-multiply-bg.jpg");
   background-color: #cea135;
   border-top: 10px solid white;
   color: #11122b;
@@ -37,6 +37,7 @@
   justify-content: center;
   align-items: center;
   font-family: 'Ubuntu Condensed', sans-serif;
+  box-shadow: inset 0px -26px 79px -8px rgba(0,0,0,0.58);
 }
 
 .features-section > .columns-wrapper{
@@ -56,4 +57,23 @@
 
 .features-section > .columns-wrapper > .column:hover{
   border-bottom: 5px solid #111222b;
+}
+
+.features-section > .columns-wrapper > .column :nth-child(1){
+  font-size: 3em;
+}
+
+.features-section > .columns-wrapper > .column :nth-child(2){
+  font-size: 1.5em;
+  font-weight: 900;
+  height: 50px;
+  transition: 1s;
+}
+
+.features-section > .columns-wrapper > .column :nth-child(2):hover{
+  letter-spacing: 1px;
+}
+
+.features-section > .columns-wrapper > .column :nth-child(3){
+  letter-spacing: 1px;
 }
