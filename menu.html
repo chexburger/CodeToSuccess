@@ -2,9 +2,128 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Menu</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script>
+      $(function(){
+        $("#footer").load("assets/html/footer.html");
+        $("head").load("assets/html/styles.html");
+      });
+    </script>
   </head>
   <body>
+    <div class="skewed-header">
+      <div class="header-bg" style="background-image: url('https://raw.githubusercontent.com/jordanhudgens/digital-literacy-html-css/master/images/backgrounds/menu.jpg');"></div>
 
+      <div class="skewed-header-wrapper">
+        <div class="skewed-header-content">
+          <div class="heading-wrapper">
+            <h1>Menu</h1>
+          </div>
+
+          <div class="links-wrapper">
+              <div class="nav-link">
+                  <a href="index.html">Home</a>
+              </div>
+
+              <!-- nav Link -->
+              <div class="nav-link">
+                  <a href="about.html">About</a>
+              </div>
+
+              <!-- nav Link -->
+              <div class="nav-link">
+                  <a href="menu.html">Menu</a>
+              </div>
+
+              <!-- nav Link -->
+              <div class="nav-link">
+                  <a href="contact.html">Contact</a>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="squares-wrapper">
+      <div class="squares">
+        <div class="square">
+          <div class="img-wrapper">
+            <img src="https://raw.githubusercontent.com/jordanhudgens/digital-literacy-html-css/master/images/squares/fries-sq-1.jpg" alt="Fries">
+          </div>
+          <div class="square-text-wrapper">
+            <a href="#item1" name="item1">
+              <h1>item1</h1>
+            </a>
+
+            <ul>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Ex corporis est, commodi.</li>
+              <li>Esse ullam pariatur laudantium?</li>
+              <li>Eveniet natus, neque perferendis.</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="square">
+          <div class="square-text-wrapper">
+            <a href="#item2" name="item2">
+              <h1>item2</h1>
+            </a>
+            <ul>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Ex corporis est, commodi.</li>
+              <li>Esse ullam pariatur laudantium?</li>
+              <li>Eveniet natus, neque perferendis.</li>
+            </ul>
+          </div>
+          <div class="img-wrapper">
+            <img src="https://raw.githubusercontent.com/jordanhudgens/digital-literacy-html-css/master/images/squares/fries-sq-2.jpg" alt="Fries">
+          </div>
+        </div>
+        <div class="square">
+          <div class="img-wrapper">
+            <img src="https://raw.githubusercontent.com/jordanhudgens/digital-literacy-html-css/master/images/squares/fries-sq-1.jpg" alt="Fries">
+          </div>
+          <div class="square-text-wrapper">
+            <a href="#item3" name="item3">
+              <h1>item3</h1>
+            </a>
+
+            <ul>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Ex corporis est, commodi.</li>
+              <li>Esse ullam pariatur laudantium?</li>
+              <li>Eveniet natus, neque perferendis.</li>
+            </ul>
+           </div>
+        </div>
+        <div class="square">
+          <div class="square-text-wrapper">
+            <a href="#item4" name="item4">
+              <h1>item4</h1>
+            </a>
+
+            <ul>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Ex corporis est, commodi.</li>
+              <li>Esse ullam pariatur laudantium?</li>
+              <li>Eveniet natus, neque perferendis.</li>
+            </ul>
+          </div>
+          <div class="img-wrapper">
+            <img src="https://raw.githubusercontent.com/jordanhudgens/digital-literacy-html-css/master/images/squares/fries-sq-2.jpg" alt="Fries">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="footer"></div>
   </body>
 </html>

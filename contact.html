@@ -2,9 +2,109 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>About</title>
+    <meta name="viewport" content"width=device-width, initial-scale=1">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script>
+      $(function(){
+        $("#footer").load("assets/html/footer.html");
+        $("head").load("assets/html/styles.html");
+      });
+    </script>
   </head>
   <body>
+    <div class="skewed-header">
+      <div class="header-bg" style="background-image: url('https://raw.githubusercontent.com/jordanhudgens/digital-literacy-html-css/master/images/backgrounds/contact.jpg');"></div>
+
+      <div class="skewed-header-wrapper">
+        <div class="skewed-header-content">
+          <div class="heading-wrapper">
+            <h1>Contact</h1>
+          </div>
+
+          <div class="links-wrapper">
+              <div class="nav-link">
+                  <a href="index.html">Home</a>
+              </div>
+
+              <!-- nav Link -->
+              <div class="nav-link">
+                  <a href="about.html">About</a>
+              </div>
+
+              <!-- nav Link -->
+              <div class="nav-link">
+                  <a href="menu.html">Menu</a>
+              </div>
+
+              <!-- nav Link -->
+              <div class="nav-link">
+                  <a href="contact.html">Contact</a>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="page-container">
+      <div class="contact-grid-wrapper">
+        <div class="company-metadata-sidebar-wrapper">
+          <div class="logo">
+            <img src="assets/logos/decamp-fantastic-fries-logo-dark.png" alt="Logo">
+          </div>
+
+
+          <div class="company-details-wrapper">
+            <i class=fas fa-map-marker-alt></i>
+            <div>
+              123 Any St<br>Scottsdale, AZ, 85251
+            </div>
+          </div>
+          <div class="company-details-wrapper">
+            <i class=fas fa-phone-volume></i>
+            <div>
+              (555)-555-555
+            </div>
+          </div>
+          <div class="company-details-wrapper">
+            <i class=fas fa-clock></i>
+            <div>
+              10 AM - MIDNIGHT
+            </div>
+          </div>
+
+        </div>
+        <div class="form">
+          <div class="form-group">
+            <input type="text" name="" id="fullName" placeholder="Your Name">
+            <label for="fullName">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" name="" id="email" placeholder="Your Email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+            <label for="message">Message</label>
+          </div>
+
+          <div class="centered-btn-wrapper">
+            <div class="spacer50"></div>
+            <button type="submit" class="btn">Send</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer50"></div>
+
+    <div id="footer"></div>
 
   </body>
 </html>
