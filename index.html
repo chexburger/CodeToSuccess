@@ -4,13 +4,17 @@
     <meta charset="utf=8" />
     <title>Homepage</title>
     <meta name="viewport" content"width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/common.css">
-    <link rel="stylesheet" href="assets/styles/nav.css">
-    <link rel="stylesheet" href="assets/styles/homepage.css">
-    <script src="https://kit.fontawesome.com/39cc26f88b.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+      $(function(){
+        $("#footer").load("assets/html/footer.html");
+        $("head").load("assets/html/styles.html");
+      });
+    </script>
 
 </head>
 <body>
@@ -105,6 +109,12 @@
 
   </div>
 </div>
+
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2976.358798830946!2d-111.85289362007666!3d41.755921379333756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754875042360493%3A0x963754131e8c4ce1!2sBridgerland+Technical+College!5e0!3m2!1sen!2sus!4v1560347719758!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div id="footer"></div>
 
 </body>
 </html>
