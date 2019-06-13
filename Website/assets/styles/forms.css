@@ -74,3 +74,12 @@
   outline: none;
   transition: 0.3s;
 }
+
+.btn:hover, .btn:active{
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.4);
+}
+
+.center-btn-wrapper{
+  display: flex;
+  justify-content: center;
+}
