@@ -1,0 +1,63 @@
+body{
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.index-content > .find-ancestor{
+  background-image: url('../../assets/images/graveyard_small.jpg');
+  width: 100%;
+  height: 754px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-content > .find-ancestor > .title{
+  color: white;
+  background-color: transparent;
+  padding: 100px;
+}
+
+.index-content > .find-ancestor > .title h2{
+
+}
+
+.index-content > .find-ancestor input{
+  width: 250px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid white;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  color: #d3d3d3;
+  background-image: url("../../assets/images/search_icon.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 13%;
+  transition: 1s;
+}
+
+.index-content > .find-ancestor input:focus{
+  /* transition: 1s; */
+  background-size: 0%;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 5px;
+  color: white;
+  outline: none;
+}
+
+::placeholder{
+  color: #c4c4c4;
+}
+
+.index-content > .description > .title{
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+}
