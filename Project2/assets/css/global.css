@@ -7,6 +7,7 @@ a{
   text-decoration: none;
 }
 
+/* Index.html */
 .index-content > .find-ancestor{
   background-image: url('../../assets/images/graveyard_small.jpg');
   width: 100%;
@@ -56,8 +57,63 @@ a{
   color: #c4c4c4;
 }
 
+.index-content > .description{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+.index-content > .description > .body{
+  margin: 0px 0px 40px 0px;
+}
+
 .index-content > .description > .title{
   text-align: center;
   justify-content: center;
   font-size: 30px;
+}
+
+.index-content > .cards{
+  justify-content: center;
+  margin: auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.index-content > .cards > .card{
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  padding: 10px;
+  margin: 20px;
+  width: 400px;
+}
+
+.index-content > .cards img{
+  width: 100%;
+}
+
+.index-content > .cards > .card > .content{
+  text-align: center;
+  padding: 10px;
+}
+
+/* about.html */
+.about-content img{
+  width: 100%;
+}
+
+.about-content > .plainText, .about-content > .photoPara{
+  justify-content: center;
+  margin: auto;
+  width: 95%;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.about-content > .plainText > .header, .about-content > .photoPara > .header{
+  border-bottom: 2px solid #808080;
+  height: 30px;
 }
