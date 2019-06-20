@@ -253,3 +253,55 @@ a{
 .contact-content > .message-form textarea:focus{
   outline: none;
 }
+
+/* blog.html */
+.blog-content > .background{
+  height: 480px;
+  width: 100%;
+}
+
+.blog-content > .wrapper{
+  justify-content: center;
+  margin: auto;
+  width: 95%;
+}
+
+.blog-content > .wrapper > .title{
+  border-bottom: 1.5px solid #808080;
+  font-size: 25px;
+  text-align: center;
+  height: 35px;
+  width: 100%;
+}
+
+.blog-content > .wrapper > .posts > .post{
+  width: 80%;
+  /* padding-bottom: 30px; */
+  margin-bottom: 30px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  position: relative;
+  left: 10%;
+}
+
+.blog-content > .wrapper > .posts > .post > .photo{
+  margin: 10px;
+  width: 90%;
+}
+
+.blog-content > .wrapper > .posts > .post > .photo img{
+  width: 100%;
+}
+
+.blog-content > .wrapper > .posts > .post > .content{
+  text-align: justify;
+}
+
+.blog-content > .wrapper > .posts > .post > .content > .title{
+  font-size: 20px;
+}
+
+.blog-content > .wrapper > .posts > .post > .content > .post-info{
+  display: block;
+}
