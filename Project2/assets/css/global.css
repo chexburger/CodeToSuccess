@@ -101,19 +101,40 @@ a{
 }
 
 /* about.html */
-.about-content img{
+.about-content > .background{
   width: 100%;
 }
 
-.about-content > .plainText, .about-content > .photoPara{
+.about-content > .content{
   justify-content: center;
   margin: auto;
   width: 95%;
-  text-align: center;
+  text-align: justify;
   letter-spacing: 0.5px;
 }
 
-.about-content > .plainText > .header, .about-content > .photoPara > .header{
+.about-content > .content > .plainText > .header, .about-content > .content > .photoPara > .header{
+  text-align: center;
   border-bottom: 2px solid #808080;
   height: 30px;
+}
+
+.about-content > .content > .photoPara > .holder{
+  width: 100%;
+}
+
+.about-content > .content > .photoPara > .holder > .item{
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  margin-bottom: 50px;
+}
+
+.about-content > .content > .photoPara > .holder > .item > .image{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content > .content > .photoPara > .holder > .item > .content{
+  width: 100%;
 }
