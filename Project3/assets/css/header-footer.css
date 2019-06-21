@@ -1,0 +1,52 @@
+
+/* Header */
+#header{
+  background-color: #303030;
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+#header > .navigation{
+  margin: 10px;
+}
+
+#header > .navigation > .link{
+  padding: 0px 10px;
+  color: #808080;
+  transition: 0.5s;
+}
+
+#header > .navigation > .link:hover{
+  color: white;
+}
+
+/* Footer */
+#footer{
+  background-color: #303030;
+  width: 100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4px;
+}
+
+#footer > .navigation{
+  margin: 10px;
+}
+
+#footer > .navigation > .link{
+  padding: 0px 10px;
+  color: #808080;
+  transition: 0.5s;
+}
+
+#footer > .navigation > .link:hover{
+  color: white;
+}
