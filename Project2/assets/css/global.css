@@ -279,6 +279,7 @@ a{
   /* padding-bottom: 30px; */
   margin-bottom: 30px;
   border: 1px solid black;
+  border-radius: 5px;
   display: grid;
   grid-template-columns: 0.3fr 1fr;
   position: relative;
@@ -303,5 +304,15 @@ a{
 }
 
 .blog-content > .wrapper > .posts > .post > .content > .post-info{
-  display: block;
+  border-bottom: 1.5px solid #808080;
+  width: 98%;
+}
+
+.blog-content > .wrapper > .posts > .post > .content > .post-info p{
+  display: inline;
+  padding-right: 20px;
+}
+
+.blog-content > .wrapper > .posts > .post > .content > .text-content{
+  width: 98%;
 }
