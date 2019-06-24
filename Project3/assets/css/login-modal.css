@@ -49,35 +49,50 @@
   padding-left: 5vh;
 }
 
+#loginModal > .login-form > .forms form{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#loginModal > .login-form > .forms div{
+  height: 50px;
+}
+
+
 #loginModal > .login-form > .forms input{
   width: 90%;
   border: none;
   border-bottom: 1px solid #808080;
-  margin-top: 5%;
+  /* margin-top: 2%; */
   background: transparent;
   text-align: left;
   font-size: 17px;
   font-weight: bold;
   color: #808080;
+  /* position: absolute; */
 }
 
 #loginModal > .login-form > .forms input:focus{
   outline: none;
 }
 
-#loginModal > .login-form > .forms > .loginButton{
+#loginModal > .login-form > .forms button{
   width: 90%;
   height: 35px;
   background-color: #808080;
   border-radius: 3px;
   color: white;
   font-weight: bold;
-  margin-top: 30px;
+  /* margin-top: 10px; */
   outline: none;
   border: none;
   font-size: 25px;
+  position: absolute;
+  left: 5%;
+  top: 75%;
 }
 
-#loginModal > .login-form > .forms > .loginButton:hover{
+
+#loginModal > .login-form > .forms button:hover{
   cursor: pointer;
 }
