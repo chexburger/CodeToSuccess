@@ -27,23 +27,28 @@
     </div>
     <!-- Content below -->
 
-    <div class="contact-content">
+    <div class="contact-content" onsubmit="">
       <img class="background" src="assets/images/contact.jpg" alt="Tied up photos">
       <div class="text">
         <p class="title">Contact Us</p>
         <p class="message">Send us a message and we'll get back to you as soon as we can</p>
       </div>
-      <div class="basic-info">
-        <input type="text" name="name" placeholder="Full Name">
-        <input type="text" name="subject" placeholder="Subject">
-        <input type="tel" name="phone" placeholder="Phone Number">
-        <input type="email" name="email" placeholder="Email Address">
-      </div>
-      <div class="message-form">
-        <p class="messageTitle">Message</p>
-        <!-- <input type="text" name="message" placeholder=""> -->
-        <textarea name="message" rows="4" cols="10"></textarea>
-      </div>
+      <form class="form-contact" action="#">
+        <div id="basic-info">
+          <!-- <form class="holder" action="#"> -->
+            <input class="ae415" type="text" name="name" placeholder="Full Name" required>
+            <input class="ae417" type="text" name="subject" placeholder="Subject" required>
+            <input class="a41gy" type="tel" name="phone" placeholder="Phone Number">
+            <input class="afw82" type="email" name="email" placeholder="Email Address" required>
+          <!-- </form> -->
+        </div>
+        <div id="message-form">
+          <p class="messageTitle">Message</p>
+          <!-- <input type="text" name="message" placeholder=""> -->
+          <textarea required name="message" rows="4" cols="10"></textarea>
+        </div>
+        <button type="submit" value="submit" class="Submit">Submit</button>
+      </form>
     </div>
 
     <!-- Content above -->

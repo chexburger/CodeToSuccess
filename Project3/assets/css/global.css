@@ -85,10 +85,17 @@ a{
   padding: 10px;
   margin: 20px;
   width: 400px;
+  background-color: white;
+  transition: 0.5s;
 }
 
 .index-content > .cards img{
   width: 100%;
+  transition: 0.5s;
+}
+
+.index-content > .cards > .card:hover{
+  transform: scale(1.2, 1.2);
 }
 
 .index-content > .cards > .card > .content{
@@ -190,7 +197,7 @@ a{
   text-align: center;
 }
 
-.contact-content > .basic-info input{
+#basic-info input{
   width: 350px;
   border: none;
   background: transparent;
@@ -204,14 +211,15 @@ a{
   margin-bottom: 30px;
 }
 
-.contact-content > .basic-info input:focus{
+#basic-info input:focus{
   /* background-color: rgba(255,255,255,0.2); */
   border-radius: 5px;
   /* color: white; */
   outline: none;
+  border: 2px solid #808080;
 }
 
-.contact-content > .basic-info{
+#basic-info{
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -221,7 +229,7 @@ a{
   left: 18%;
 }
 
-.contact-content > .message-form {
+#message-form {
   width: 95%;
   justify-content: center;
   letter-spacing: 0.5px;
@@ -230,11 +238,11 @@ a{
   padding-bottom: 30px;
 }
 
-.contact-content > .message-form > .messageTitle{
+#message-form > .messageTitle{
   font-size: 20px;
 }
 
-.contact-content > .message-form textarea{
+#message-form textarea{
   width: 50%;
   height: 400px;
   border: none;
@@ -250,8 +258,33 @@ a{
   resize: none;
 }
 
-.contact-content > .message-form textarea:focus{
+#message-form textarea:focus{
   outline: none;
+}
+
+.Submit{
+  text-shadow: none;
+  line-height: 1.2;
+  /* display: inline-block; */
+  padding: 10px 16px;
+  margin: 0 10px 0 0;
+  position: relative;
+  border-radius: 4px;
+  border: 3px solid transparent;
+  background: #444857;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none !important;
+  text-align: center;
+  font-weight: 700;
+  box-sizing: border-box;
+  font-size: 1em;
+  width: 15%;
+  position: relative;
+  left: 42.5%;
+  bottom: 30px;
 }
 
 /* blog.html */
