@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Grave Site</title>
+
+    <!-- JQuery -->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+      $(function(){
+        $("head").load("assets/html/styles.html");
+        $("#header").load("assets/html/header.html");
+        $("#footer").load("assets/html/footer.html");
+      });
+    </script>
+
+  </head>
+  <body>
+
+    <!-- Header Load Point -->
+    <div id="header">
+
+    </div>
+    <!-- Content below -->
+
+    <div class="contact-content">
+      <img class="background" src="assets/images/contact.jpg" alt="Tied up photos">
+      <div class="text">
+        <p class="title">Contact Us</p>
+        <p class="message">Send us a message and we'll get back to you as soon as we can</p>
+      </div>
+      <div class="basic-info">
+        <input type="text" name="name" placeholder="Full Name">
+        <input type="text" name="subject" placeholder="Subject">
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <input type="email" name="email" placeholder="Email Address">
+      </div>
+      <div class="message-form">
+        <p class="messageTitle">Message</p>
+        <!-- <input type="text" name="message" placeholder=""> -->
+        <textarea name="message" rows="4" cols="10"></textarea>
+      </div>
+    </div>
+
+    <!-- Content above -->
+    <!-- Footer Load Point -->
+    <div id="footer">
+
+    </div>
+
+  </body>
+</html>
