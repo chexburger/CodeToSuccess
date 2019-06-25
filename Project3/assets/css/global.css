@@ -223,7 +223,8 @@ a{
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 1fr 1fr;
+  /* grid-auto-rows: 1fr 1fr; */
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
   position: relative;
   left: 18%;
@@ -285,6 +286,7 @@ a{
   position: relative;
   left: 42.5%;
   bottom: 30px;
+  /* position: absolute; */
 }
 
 /* blog.html */

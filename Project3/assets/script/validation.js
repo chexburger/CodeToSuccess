@@ -6,6 +6,8 @@ $(function() {
 			//Define the validation rules for each field
 			firstname: "required",
 			lastname: "required",
+      message: "required",
+      subject: "required",
 			//If multiple rulls are required place in brackets
 			email: {
 				required: true,
@@ -25,9 +27,11 @@ $(function() {
 		messages: {
 			firstname: "Please enter your First Name",
 			lastname:  "Please enter your Last Name",
+      message: "Message content cannot be Empty",
+      subject: "A Message Subject is Required",
 			password: {
 				required: "Please provide a password",
-				minlength: "Passord must be 5+ Characters"
+				minlength: "Password must be 5+ Characters"
 			},
 			password_confirm: {
 				equalTo: "Passwords must match"

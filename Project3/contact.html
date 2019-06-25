@@ -10,16 +10,23 @@
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous">
     </script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="assets/script/validationContact.js"></script>
     <script>
-      $(function(){
-        $("head").load("assets/html/styles.html");
-        $("#header").load("assets/html/header.html");
-        $("#footer").load("assets/html/footer.html");
-      });
+    $(function(){
+      $("head").load("assets/html/styles.html");
+      $("#header").load("assets/html/header.html");
+      $("#loginModal").load("assets/html/login-modal.html");
+      $("#footer").load("assets/html/footer.html");
+    });
     </script>
 
   </head>
   <body>
+
+    <div id="loginModal">
+      <!-- Login Modal Loader -->
+    </div>
 
     <!-- Header Load Point -->
     <div id="header">
@@ -33,13 +40,13 @@
         <p class="title">Contact Us</p>
         <p class="message">Send us a message and we'll get back to you as soon as we can</p>
       </div>
-      <form class="form-contact" action="#">
+      <form class="form-contact" name="validate" action="#">
         <div id="basic-info">
           <!-- <form class="holder" action="#"> -->
-            <input class="ae415" type="text" name="name" placeholder="Full Name" required>
-            <input class="ae417" type="text" name="subject" placeholder="Subject" required>
+            <input class="ae415" type="text" name="name" placeholder="Full Name">
+            <input class="ae417" type="text" name="subject" placeholder="Subject">
             <input class="a41gy" type="tel" name="phone" placeholder="Phone Number">
-            <input class="afw82" type="email" name="email" placeholder="Email Address" required>
+            <input class="afw82" type="email" name="email" placeholder="Email Address">
           <!-- </form> -->
         </div>
         <div id="message-form">
