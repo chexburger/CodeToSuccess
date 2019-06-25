@@ -263,6 +263,13 @@ a{
   outline: none;
 }
 
+#errorBox{
+  position: absolute;
+  left: 50px;
+  top: 850px;
+  list-style-type: none;
+}
+
 .Submit{
   text-shadow: none;
   line-height: 1.2;
