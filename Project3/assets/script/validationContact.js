@@ -1,5 +1,7 @@
 $(function() {
 	$("form[name='validate']").validate({
+		errorLabelContainer: "#errorBox",
+  	wrapper: "li",
 		//Validation rules
 		rules: {
 			//The key name is the name attribute of an input field.
