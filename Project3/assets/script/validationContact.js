@@ -1,4 +1,4 @@
-$(document).ready(function()){
+$(document).ready(function(){
 	$("form[name='validate']").validate({
 		errorLabelContainer: "#errorBox",
   	wrapper: "li",
