@@ -4,6 +4,7 @@ import moment from 'moment';
 import{BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import PortfolioContainer from "./portfolio/portfolio-container";
+import PortfolioDetail from "./portfolio/portfolio-detail";
 import NavigationContainer from "./navigation/navigation-container";
 import Home from "./pages/home";
 import About from "./pages/about";
@@ -27,7 +28,8 @@ export default class App extends Component {
             <Route path="/about" component ={About} />
             <Route path="/contact" component ={Contact} />
             <Route path="/blog" component ={Blog} />
-            <Route path="/portfolio/:slug" component ={Blog} />
+            <Route path="/portfolio/:slug" component ={PortfolioDetail} />
+            <Route component={NoMatch} />
           </Switch>
         </div>
       </Router>
