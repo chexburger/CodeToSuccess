@@ -76,7 +76,7 @@ export default class App extends Component {
   }
 
   authorizedPages() {
-    return [<Route path="/portfolio-manager" component={PortfolioManager} />];
+    return [<Route key={String(Math.random())} path="/portfolio-manager" component={PortfolioManager} />];
   }
 
   render() {
