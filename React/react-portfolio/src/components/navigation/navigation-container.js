@@ -1,12 +1,13 @@
 import React from 'react';
 import axios from 'axios';
+import { withRouter } from 'react-router';
 import { NavLink } from 'react-router-dom';
 
 const NavigationComponent = props => {
   const dynamicLink = (route, linkText) => {
    return (
      <div className="nav-link-wrapper">
-       <NavLink to="/blog" activeClassName="nav-link-active">Blog</NavLink>
+       <NavLink to={route} activeClassName="nav-link-active">{linkText}</NavLink>
      </div>
    );
 };
@@ -15,7 +16,7 @@ const handleSignOut = () => {
   axios.delete("https://api.devcamp.space/logout",
   {withCredentials:true}
   ).then(response =>{
-    if(resonse.status === 200){
+    if(response.status === 200){
       props.history.push("/");
       props.handleSuccessfulLogout();
     }
@@ -28,17 +29,12 @@ const handleSignOut = () => {
   return(
     <div className="nav-wrapper">
     <div className="left-side">
-    <div className="nav-link-wrapper">
-    <NavLink exact to="/" activeClassName="nav-link-active">Home</NavLink>
-    </div>
-    <div className="nav-link-wrapper">
-    <NavLink to="/about" activeClassName="nav-link-active">About</NavLink>
-    </div>
-    <div className="nav-link-wrapper">
-    <NavLink to="/contact" activeClassName="nav-link-active">Contact</NavLink>
-    </div>
+    {dynamicLink("/","Home")}
+    {dynamicLink("/about","About")}
+    {dynamicLink("/contact","Contact")}
+    {dynamicLink("/blog","Blog")}
 
-    {props.loggedInStatus === "LOGGED_IN" ? dynamicLink("/blog", "Blog") : null}
+    {props.loggedInStatus === "LOGGED_IN" ? dynamicLink("/portfolio-manager", "Portfolio Manager") : null}
 
     </div>
     <div className="right-side">
@@ -50,4 +46,4 @@ const handleSignOut = () => {
   )
 }
 
-export default NavigationComponent;
+export default withRouter(NavigationComponent);
